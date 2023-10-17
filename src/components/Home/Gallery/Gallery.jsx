@@ -2,6 +2,10 @@ import gallery1 from '../../../assets/gallery1.jpg'
 import gallery2 from '../../../assets/gallery2.jpg'
 import gallery3 from '../../../assets/gallery3.jpg'
 import gallery4 from '../../../assets/gallery4.jpg'
+import gallery5 from '../../../assets/gallery5.jpg'
+import gallery6 from '../../../assets/gallery6.jpg'
+import gallery7 from '../../../assets/gallery7.jpg'
+import gallery8 from '../../../assets/gallery8.jpg'
 
 const Gallery = () => {
   return (
@@ -20,7 +24,7 @@ const Gallery = () => {
                   alt="Photo by Magicle"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-yellow-200 via-transparent to-transparent opacity-50"></div>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-50"></div>
               </div>
             </div>
             <div className="md:col-span-2">
@@ -31,7 +35,7 @@ const Gallery = () => {
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-yellow-200 via-transparent to-transparent opacity-50"></div>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-50"></div>
               </div>
             </div>
             <div className="md:col-span-4">
@@ -42,7 +46,7 @@ const Gallery = () => {
                   alt="Photo by Martin Sanchez"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-yellow-200 via-transparent to-transparent opacity-50"></div>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-50"></div>
               </div>
             </div>
             <div className="md:col-span-2">
@@ -53,7 +57,7 @@ const Gallery = () => {
                   alt="Photo by Lorenzo Herrera"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-yellow-200 via-transparent to-transparent opacity-50"></div>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-50"></div>
               </div>
             </div>
             
@@ -62,45 +66,45 @@ const Gallery = () => {
             <div className="md:col-span-2">
               <div className="group relative flex h-48 items-end overflow-hidden rounded-lg md:rounded-[48px] bg-gray-100 shadow-lg md:h-80">
                 <img
-                  src={gallery2}
+                  src={gallery5}
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-yellow-200 via-transparent to-transparent opacity-50"></div>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-50"></div>
               </div>
             </div>
             <div className="md:col-span-4">
               <div className="group relative flex h-48 items-end overflow-hidden rounded-lg md:rounded-[48px] bg-gray-100 shadow-lg md:h-80">
                 <img
-                  src={gallery3}
+                  src={gallery6}
                   loading="lazy"
                   alt="Photo by Martin Sanchez"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-yellow-200 via-transparent to-transparent opacity-50"></div>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-50"></div>
               </div>
             </div>
             <div className="md:col-span-2">
               <div className="group relative flex h-48 items-end overflow-hidden rounded-lg md:rounded-[48px] bg-gray-100 shadow-lg md:h-80">
                 <img
-                  src={gallery4}
+                  src={gallery7}
                   loading="lazy"
                   alt="Photo by Lorenzo Herrera"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-yellow-200 via-transparent to-transparent opacity-50"></div>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-50"></div>
               </div>
             </div>
             <div className="md:col-span-4">
               <div className="group relative flex h-48 items-end overflow-hidden rounded-lg md:rounded-[48px] bg-gray-100 shadow-lg md:h-80">
                 <img
-                  src={gallery1}
+                  src={gallery8}
                   loading="lazy"
                   alt="Photo by Magicle"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-yellow-200 via-transparent to-transparent opacity-50"></div>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-50"></div>
               </div>
             </div>
           </div>
