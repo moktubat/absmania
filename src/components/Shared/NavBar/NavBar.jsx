@@ -28,7 +28,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to='/books'
+              to='/about'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               About
@@ -36,7 +36,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to='/about'
+              to='/workout-programs'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Workout Programs
@@ -44,7 +44,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to='/about'
+              to='/recipes'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Recipes
@@ -52,7 +52,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to='/about'
+              to='/store'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Store
@@ -60,7 +60,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to='/about'
+              to='/contact'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Contact
@@ -68,7 +68,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to='/about'
+              to='/login'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Login
