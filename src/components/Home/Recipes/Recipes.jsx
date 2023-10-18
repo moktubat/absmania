@@ -24,9 +24,9 @@ const Recipes = () => {
                 />
               </div>
               <div className="my-4">
-                <h1 className="text-3xl text-white font-bold">
+                <h2 className="text-3xl text-white font-bold">
                   Protein-packed power bowl
-                </h1>
+                </h2>
                 <p className="my-4 text-white">
                   A colorful protein-packed power bowl filled with flavorful,
                   meaty grilled satay tofu and an array of vibrant veggies on a
