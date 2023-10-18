@@ -3,7 +3,7 @@ import avatar2 from "../../../assets/avatar2.jpg";
 import avatar3 from "../../../assets/avatar3.jpg";
 import avatar4 from "../../../assets/avatar4.jpg";
 import avatar5 from "../../../assets/avatar5.jpg";
-
+import style from "./Testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
@@ -63,8 +63,14 @@ const Testimonials = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <section>
-      <div className="md:container px-5 pt-14">
+    <div className="pt-1 fitness_bg">
+      <div className="md:mx-16 my-8">
+        <div className="my-8">
+          <h1 className="text-[#FFED00] text-2xl font-semibold">
+            ///Testimonials
+          </h1>
+          <p className="text-3xl text-white font-bold">Our Client Reviews</p>
+        </div>
         <Swiper
           direction={"vertical"}
           autoplay={{
@@ -83,7 +89,7 @@ const Testimonials = () => {
             setActiveIndex(e.realIndex);
           }}
           modules={[Autoplay, Pagination]}
-          className="md:h-96 h-[40rem] max-w-3xl"
+          className="md:h-96 h-[40rem] md:w-3/4"
         >
           {testimonials.testimonials_content.map((testimonial, i) => (
             <SwiperSlide key={i}>
@@ -93,24 +99,28 @@ const Testimonials = () => {
                border-slate-200 md:flex-row flex-col
                 ${activeIndex !== i && "scale-75 blur-sm"}`}
               >
-                <img src={testimonial.img} alt="..." className="h-24" />
+                <img src={testimonial.img} alt="..." className="h-32 rounded-xl" />
                 <div>
-                  <p className="sm:text-base text-sm">{testimonial.review}</p>
+                  <p className="text-white sm:text-base text-sm">
+                    {testimonial.review}
+                  </p>
                   <Rating
-                  className="py-3"
-                  style={{ maxWidth: 100 }}
-                  value={testimonial.rate}
-                  readOnly
-                />
-                  <h4>{testimonial.name}</h4>
-                  <h5>{testimonial.profession}</h5>
+                    className="py-3"
+                    style={{ maxWidth: 100 }}
+                    value={testimonial.rate}
+                    readOnly
+                  />
+                  <h4 className="text-white text-xl font-medium">
+                    {testimonial.name}
+                  </h4>
+                  <h5 className="text-white">{testimonial.profession}</h5>
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-    </section>
+    </div>
   );
 };
 
