@@ -1,3 +1,4 @@
+import Contact from "../Contact/Contact";
 import Gallery from "../Gallery/Gallery";
 import Header from "../Header/Header";
 import Merch from "../Merch/Merch";
@@ -12,6 +13,7 @@ const Home = () => {
             <Merch></Merch>
             <Gallery></Gallery>
             <Recipes></Recipes>
+            <Contact></Contact>
         </div>
     );
 };
