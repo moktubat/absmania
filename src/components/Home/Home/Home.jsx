@@ -3,6 +3,7 @@ import Gallery from "../Gallery/Gallery";
 import Header from "../Header/Header";
 import Merch from "../Merch/Merch";
 import Recipes from "../Recipes/Recipes";
+import Testimonials from "../Testimonials/Testimonials";
 import Workout from "../Workout/Workout";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <Gallery></Gallery>
             <Recipes></Recipes>
             <Contact></Contact>
+            <Testimonials></Testimonials>
         </div>
     );
 };
