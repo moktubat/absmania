@@ -8,7 +8,7 @@ body {
   }
 
 .active{
-    @apply font-medium tracking-wide text-[#FFED00] transition-colors duration-200 underline-offset-8
+    @apply font-medium tracking-wide text-[#FFED00] transition-colors duration-200 underline-offset-8 underline
   }
   
   .default{
