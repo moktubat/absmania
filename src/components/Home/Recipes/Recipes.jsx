@@ -19,7 +19,7 @@ const Recipes = () => {
               <div>
                 <img
                   src={recipes1}
-                  className="w-full md:w-[1200px] md:h-[450px] rounded-lg md:rounded-[48px]"
+                  className="w-full md:w-[1100px] md:h-[400px] rounded-lg md:rounded-[48px]"
                   alt=""
                 />
               </div>
@@ -64,26 +64,26 @@ const Recipes = () => {
           </div>
           <div className="md:w-1/3 grid grid-cols-2 md:grid-cols-1 gap-3">
             <div className="md:flex items-center gap-2">
-              <img src={recipes2} className="w-[102px] h-[102px] rounded-lg" alt="" />
-              <p className="my-4 text-white text-2xl font-medium hover:underline-offset-8 hover:underline ">
+              <img src={recipes2} className="w-[92px] h-[92px] rounded-lg" alt="" />
+              <p className="my-4 text-white text-xl font-medium hover:underline-offset-8 hover:underline ">
                 High Protein Recipes
               </p>
             </div>
             <div className="md:flex items-center gap-2">
-            <img src={recipes3} className="w-[102px] h-[102px] rounded-lg" alt="" />
-              <p className="my-4 text-white text-2xl font-medium hover:underline-offset-8 hover:underline ">
+            <img src={recipes3} className="w-[92px] h-[92px] rounded-lg" alt="" />
+              <p className="my-4 text-white text-xl font-medium hover:underline-offset-8 hover:underline ">
               Low Carb Recipes
               </p>
             </div>
             <div className="md:flex items-center gap-2">
-            <img src={recipes4} className="w-[102px] h-[102px] rounded-lg" alt="" />
-              <p className="my-4 text-white text-2xl font-medium hover:underline-offset-8 hover:underline ">
+            <img src={recipes4} className="w-[92px] h-[92px] rounded-lg" alt="" />
+              <p className="my-4 text-white text-xl font-medium hover:underline-offset-8 hover:underline ">
               Dairy Free Recipes
               </p>
             </div>
             <div className="md:flex items-center gap-2">
-              <img src={recipes5} className="w-[102px] h-[102px] rounded-lg" alt="" />
-              <p className="my-4 text-white text-2xl font-medium hover:underline-offset-8 hover:underline ">
+              <img src={recipes5} className="w-[92px] h-[92px] rounded-lg" alt="" />
+              <p className="my-4 text-white text-xl font-medium hover:underline-offset-8 hover:underline ">
               Vegetarian Recipes
               </p>
             </div>

@@ -1,6 +1,7 @@
 import Contact from "../Contact/Contact";
 import Gallery from "../Gallery/Gallery";
 import Header from "../Header/Header";
+import Membership from "../Membership/Membership";
 import Merch from "../Merch/Merch";
 import Recipes from "../Recipes/Recipes";
 import Testimonials from "../Testimonials/Testimonials";
@@ -14,6 +15,7 @@ const Home = () => {
             <Merch></Merch>
             <Gallery></Gallery>
             <Recipes></Recipes>
+            <Membership></Membership>
             <Contact></Contact>
             <Testimonials></Testimonials>
         </div>

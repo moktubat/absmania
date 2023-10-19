@@ -13,7 +13,7 @@ const Workout = () => {
     <div>
       <div className="my-16 mx-16 overflow-hidden">
         <h1 className="text-white text-4xl font-bold pb-6">
-          Free Workout Programs
+          Workout Programs
         </h1>
         <Swiper
           slidesPerView={1}
