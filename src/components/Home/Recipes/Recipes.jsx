@@ -21,7 +21,7 @@ const Recipes = () => {
                   src={recipes1}
                   className="w-full md:w-[1100px] md:h-[400px] rounded-lg md:rounded-[48px]"
                   alt=""
-                  loading=" lazy"
+                  loading="lazy"
                 />
               </div>
               <div className="my-4">
