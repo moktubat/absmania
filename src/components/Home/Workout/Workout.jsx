@@ -42,6 +42,7 @@ const Workout = () => {
               src={workout1}
               className="w-full md:w-[210px] h-full md:h-[460px] object-cover object-center bg-black opacity-40 bg-opacity-100"
               alt=""
+              loading=" lazy"
             />
             <p
               className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-bold"
@@ -58,6 +59,7 @@ const Workout = () => {
               src={workout2}
               className="w-full md:w-[210px] h-full md:h-[460px] object-cover object-center bg-black opacity-40 bg-opacity-100"
               alt=""
+              loading=" lazy"
             />
             <p
               className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-bold"
@@ -74,6 +76,7 @@ const Workout = () => {
               src={workout3}
               className="w-full md:w-[210px] h-full md:h-[460px] object-cover object-center bg-black opacity-40 bg-opacity-100"
               alt=""
+              loading=" lazy"
             />
             <p
               className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-bold"
@@ -90,6 +93,7 @@ const Workout = () => {
               src={workout4}
               className="w-full md:w-[210px] h-full md:h-[460px] object-cover object-center bg-black opacity-40 bg-opacity-100"
               alt=""
+              loading=" lazy"
             />
             <p
               className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-bold"
@@ -107,6 +111,7 @@ const Workout = () => {
               src={workout5}
               className="w-full md:w-[210px] h-full md:h-[460px] object-cover object-center bg-black opacity-40 bg-opacity-100"
               alt=""
+              loading=" lazy"
             />
             <p
               className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-bold"

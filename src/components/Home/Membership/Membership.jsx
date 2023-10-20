@@ -184,7 +184,7 @@ export default function Example() {
                             </li>
                           ))}
                         </ul>
-                        <Link className="btn capitalize hover:bg-black hover:text-white hover:border-black bg-black text-white border-[#FFED00] rounded-2xl">
+                        <Link className="btn capitalize hover:bg-black hover:text-white hover:border-black bg-black text-white border-[#FFED00] rounded-2xl ">
                           Get {post.title}
                         </Link>
                       </div>

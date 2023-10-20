@@ -5,6 +5,7 @@ import Membership from "../Membership/Membership";
 import Merch from "../Merch/Merch";
 import Recipes from "../Recipes/Recipes";
 import Testimonials from "../Testimonials/Testimonials";
+import Trainer from "../Trainer/Trainer";
 import Workout from "../Workout/Workout";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <Merch></Merch>
             <Gallery></Gallery>
             <Recipes></Recipes>
+            <Trainer></Trainer>
             <Membership></Membership>
             <Contact></Contact>
             <Testimonials></Testimonials>

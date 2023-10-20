@@ -85,7 +85,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="hidden md:block w-full my-4">
-          <img src={contact} className="w-[520px] h-[500px] rounded-lg md:rounded-[48px] object-cover object-center" alt="" />
+          <img src={contact} className="w-[520px] h-[500px] rounded-lg md:rounded-[48px] object-cover object-center" alt="" loading=" lazy"/>
         </div>
       </div>
     </div>

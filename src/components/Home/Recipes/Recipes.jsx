@@ -8,7 +8,7 @@ const Recipes = () => {
     <div>
       <div className="mx-16 my-16">
         <div className="flex items-center justify-between my-16">
-          <h1 className="text-[#FFED00] text-2xl font-semibold">/// Recipes</h1>
+          <h1 className="text-[#FFED00] text-2xl font-semibold">///Recipes</h1>
           <button className="btn  capitalize hover:bg-[#FFED00] hover:text-black hover:border-black bg-black text-white border-[#FFED00] rounded-2xl">
             View All Recipes
           </button>
@@ -21,6 +21,7 @@ const Recipes = () => {
                   src={recipes1}
                   className="w-full md:w-[1100px] md:h-[400px] rounded-lg md:rounded-[48px]"
                   alt=""
+                  loading=" lazy"
                 />
               </div>
               <div className="my-4">
@@ -64,25 +65,25 @@ const Recipes = () => {
           </div>
           <div className="md:w-1/3 grid grid-cols-2 md:grid-cols-1 gap-3">
             <div className="md:flex items-center gap-2">
-              <img src={recipes2} className="w-[92px] h-[92px] rounded-lg" alt="" />
+              <img src={recipes2} className="w-[92px] h-[92px] rounded-lg" alt="" loading=" lazy"/>
               <p className="my-4 text-white text-xl font-medium hover:underline-offset-8 hover:underline ">
                 High Protein Recipes
               </p>
             </div>
             <div className="md:flex items-center gap-2">
-            <img src={recipes3} className="w-[92px] h-[92px] rounded-lg" alt="" />
+            <img src={recipes3} className="w-[92px] h-[92px] rounded-lg" alt="" loading=" lazy"/>
               <p className="my-4 text-white text-xl font-medium hover:underline-offset-8 hover:underline ">
               Low Carb Recipes
               </p>
             </div>
             <div className="md:flex items-center gap-2">
-            <img src={recipes4} className="w-[92px] h-[92px] rounded-lg" alt="" />
+            <img src={recipes4} className="w-[92px] h-[92px] rounded-lg" alt="" loading=" lazy"/>
               <p className="my-4 text-white text-xl font-medium hover:underline-offset-8 hover:underline ">
               Dairy Free Recipes
               </p>
             </div>
             <div className="md:flex items-center gap-2">
-              <img src={recipes5} className="w-[92px] h-[92px] rounded-lg" alt="" />
+              <img src={recipes5} className="w-[92px] h-[92px] rounded-lg" alt="" loading=" lazy"/>
               <p className="my-4 text-white text-xl font-medium hover:underline-offset-8 hover:underline ">
               Vegetarian Recipes
               </p>
