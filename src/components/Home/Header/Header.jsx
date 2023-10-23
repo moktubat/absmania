@@ -4,8 +4,8 @@ const Header = () => {
     <div>
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row-reverse md:gap-20">
-          <img src={banner} className="w-1/2 rounded" loading=" lazy"/>
-          <div className="w-1/2">
+          <img src={banner} className="md:w-1/2 h-full rounded object-cover" loading=" lazy"/>
+          <div className="md:w-1/2">
             <h1 className="text-white text-6xl font-light pb-3">make your</h1>
             <p className="text-white text-7xl font-bold">BODY SHAPE</p>
             <p className="py-8 text-white text-lg">

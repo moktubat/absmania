@@ -1,3 +1,4 @@
+import Blog from "../Blog/Blog";
 import Contact from "../Contact/Contact";
 import Gallery from "../Gallery/Gallery";
 import Header from "../Header/Header";
@@ -19,6 +20,7 @@ const Home = () => {
             <Trainer></Trainer>
             <Membership></Membership>
             <Contact></Contact>
+            <Blog></Blog>
             <Testimonials></Testimonials>
         </div>
     );

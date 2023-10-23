@@ -60,6 +60,14 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
+              to='/blogs'
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
+            >
+              Blogs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to='/contact'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
