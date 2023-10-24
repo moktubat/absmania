@@ -39,7 +39,7 @@ const About = () => {
             <AiOutlineFieldTime className="text-5xl text-[#FFED00]"></AiOutlineFieldTime>
             <p className="pt-3 text-lg text-white">Excercise round the clock</p>
             <p className="pt-3 text-lg text-white">
-              Take advantage from gym’s benefits 24 hours a day, 7 days a week
+              Take advantage from gym&apos;s benefits 24 hours a day, 7 days a week
               in each plans available
             </p>
           </div>
@@ -55,7 +55,7 @@ const About = () => {
             <FaMobileAlt className="text-5xl text-[#FFED00]"></FaMobileAlt>
             <p className="pt-3 text-lg text-white">Dedicated gym app</p>
             <p className="pt-3 text-lg text-white">
-              App users can book space at your gym’s classes, with personal
+              App users can book space at your gym&apos;s classes, with personal
               trainers
             </p>
           </div>

@@ -1,0 +1,436 @@
+[
+  {
+    "_id": "highproteinrecipe1",
+    "image": "https://simplerootswellness.com/wp-content/uploads/2017/07/hawaiian-chicken-salad-bowl-4.jpg",
+    "name": "Protein-Packed Chicken Salad",
+    "about": "A delicious and nutritious chicken salad that's perfect for post-workout recovery. Packed with lean protein, this salad will help your muscles recover and grow. A tasty blend of chicken, greens, and nuts.",
+    "category": "High-Protein",
+    "ingredients": [
+      "Chicken breast",
+      "Mixed greens",
+      "Cherry tomatoes",
+      "Almonds",
+      "Olive oil",
+      "Lemon juice"
+    ],
+    "how_to_make": [
+      "Grill the chicken breast until cooked through, then slice it into strips.",
+      "Toss mixed greens and cherry tomatoes in a bowl.",
+      "Sprinkle almonds over the salad.",
+      "Whisk together olive oil and lemon juice to make the dressing.",
+      "Drizzle the dressing over the salad.",
+      "Top the salad with the sliced chicken and enjoy."
+    ]
+  },
+  {
+    "_id": "highproteinrecipe2",
+    "name": "Quinoa and Black Bean Bowl",
+    "image": "https://greenhealthycooking.com/wp-content/uploads/2018/03/Mexican-Quinoa-Salad.jpg",
+    "about": "A protein-rich and wholesome bowl featuring quinoa, black beans, and fresh veggies. This recipe is a complete meal that's perfect for refueling after a gym session.",
+    "category": "High-Protein",
+    "ingredients": [
+      "Quinoa",
+      "Black beans",
+      "Avocado",
+      "Bell peppers",
+      "Cilantro",
+      "Lime juice"
+    ],
+    "how_to_make": [
+      "Cook quinoa according to package instructions.",
+      "Rinse and drain the black beans.",
+      "Dice avocado and bell peppers.",
+      "Chop cilantro and combine it with the black beans and veggies.",
+      "Mix in cooked quinoa.",
+      "Squeeze lime juice over the bowl and toss everything together."
+    ]
+  },
+  {
+    "_id": "highproteinrecipe3",
+    "name": "Salmon and Asparagus Foil Pack",
+    "image": "https://www.eatwell101.com/wp-content/uploads/2019/03/baked-salmon-recipe.jpg",
+    "about": "A simple yet incredibly tasty recipe featuring salmon and asparagus cooked in a foil pack. High in protein and rich in omega-3 fatty acids.",
+    "category": "High-Protein",
+    "ingredients": [
+      "Salmon fillet",
+      "Asparagus spears",
+      "Garlic",
+      "Lemon",
+      "Olive oil",
+      "Dill"
+    ],
+    "how_to_make": [
+      "Lay out a piece of foil and place salmon in the center.",
+      "Arrange asparagus spears around the salmon.",
+      "Sprinkle minced garlic over the salmon and asparagus.",
+      "Squeeze lemon juice and drizzle olive oil over the ingredients.",
+      "Season with dill, salt, and pepper.",
+      "Fold the foil into a packet and bake at 375°F (190°C) for 20-25 minutes."
+    ]
+  },
+  {
+    "_id": "highproteinrecipe4",
+    "name": "Greek Yogurt Parfait",
+    "image": "https://feelgoodfoodie.net/wp-content/uploads/2021/05/fruit-and-yogurt-parfait-09.jpg",
+    "about": "A high-protein, creamy Greek yogurt parfait loaded with fresh berries and honey. This makes for a perfect post-gym snack or breakfast option.",
+    "category": "High-Protein",
+    "ingredients": [
+      "Greek yogurt",
+      "Blueberries",
+      "Strawberries",
+      "Raspberries",
+      "Honey",
+      "Granola"
+    ],
+    "how_to_make": [
+      "In a glass or bowl, layer Greek yogurt at the bottom.",
+      "Add a layer of blueberries, then sliced strawberries and raspberries.",
+      "Drizzle honey over the berries.",
+      "Top it off with a sprinkle of granola for added crunch.",
+      "Repeat the layers as desired and enjoy your parfait."
+    ]
+  },
+  {
+    "_id": "highproteinrecipe5",
+    "name": "Lean Beef Stir-Fry",
+    "image": "https://i.pinimg.com/originals/61/28/e6/6128e6317d735d1cb2dbac16474c654b.jpg",
+    "about": "A flavorful and protein-packed stir-fry with lean beef and a variety of colorful vegetables. This recipe is not only delicious but also a great source of protein and nutrients.",
+    "category": "High-Protein",
+    "ingredients": [
+      "Lean beef strips",
+      "Broccoli florets",
+      "Red bell pepper",
+      "Carrots",
+      "Soy sauce",
+      "Sesame oil"
+    ],
+    "how_to_make": [
+      "In a hot skillet, stir-fry lean beef strips until they're browned and cooked through.",
+      "Add broccoli, red bell pepper, and carrots to the skillet.",
+      "Drizzle soy sauce and sesame oil over the ingredients.",
+      "Continue stir-frying until the veggies are tender and the flavors meld together.",
+      "Serve hot, and enjoy your high-protein stir-fry."
+    ]
+  },
+  {
+    "_id": "lowcarbrecipe1",
+    "name": "Zucchini Noodles with Pesto",
+    "image": "https://cookieandkate.com/images/2016/06/zoodles-with-pesto-and-tomatoes.jpg",
+    "about": "A low-carb twist on classic pasta, this dish features zucchini noodles coated in a flavorful basil pesto sauce. It's a satisfying and carb-conscious alternative.",
+    "category": "Low-Carb",
+    "ingredients": [
+      "Zucchini",
+      "Basil leaves",
+      "Pine nuts",
+      "Garlic",
+      "Parmesan cheese",
+      "Olive oil"
+    ],
+    "how_to_make": [
+      "Spiralize zucchini to create noodles.",
+      "In a food processor, combine basil, pine nuts, garlic, and Parmesan cheese to make pesto.",
+      "Toss the zucchini noodles with the pesto sauce and drizzle with olive oil.",
+      "Serve and enjoy this low-carb delight."
+    ]
+  },
+  {
+    "_id": "lowcarbrecipe2",
+    "name": "Cauliflower Rice Stir-Fry",
+    "image": "https://www.kitchensanctuary.com/wp-content/uploads/2017/04/Honey-and-garlic-chicken-stir-fry-with-cauliflower-egg-fried-rice-square-FS.jpg",
+    "about": "A low-carb and healthy twist on traditional stir-fry, using cauliflower rice as a base. Loaded with colorful veggies and protein, it's perfect for carb-conscious eaters.",
+    "category": "Low-Carb",
+    "ingredients": [
+      "Cauliflower",
+      "Broccoli",
+      "Bell peppers",
+      "Chicken breast",
+      "Soy sauce",
+      "Ginger"
+    ],
+    "how_to_make": [
+      "Grate cauliflower to create cauliflower rice.",
+      "Stir-fry chicken breast until cooked, then set aside.",
+      "In the same pan, stir-fry broccoli, bell peppers, and ginger.",
+      "Add cauliflower rice and soy sauce, then return the chicken to the pan.",
+      "Stir-fry until everything is well combined and heated through."
+    ]
+  },
+  {
+    "_id": "lowcarbrecipe3",
+    "name": "Avocado and Egg Salad",
+    "image": "https://www.eatwell101.com/wp-content/uploads/2019/04/avocado-salad-recipe-2.jpg",
+    "about": "A low-carb salad packed with healthy fats and protein. Creamy avocados and hard-boiled eggs make a perfect pairing for a satisfying and nutritious meal.",
+    "category": "Low-Carb",
+    "ingredients": [
+      "Avocado",
+      "Hard-boiled eggs",
+      "Cherry tomatoes",
+      "Red onion",
+      "Lime juice",
+      "Cilantro"
+    ],
+    "how_to_make": [
+      "Dice avocado and hard-boiled eggs.",
+      "Mix them with cherry tomatoes and red onion.",
+      "Drizzle with lime juice and garnish with fresh cilantro.",
+      "Toss the ingredients gently and enjoy your low-carb salad."
+    ]
+  },
+  {
+    "_id": "lowcarbrecipe4",
+    "name": "Salmon and Spinach Stuffed Mushrooms",
+    "image": "https://therecipecritic.com/wp-content/uploads/2023/04/stuffed_salmon-1.jpg",
+    "about": "A low-carb appetizer or main dish featuring portobello mushrooms stuffed with a savory mixture of salmon and spinach. High in protein and full of flavor.",
+    "category": "Low-Carb",
+    "ingredients": [
+      "Portobello mushrooms",
+      "Salmon fillet",
+      "Spinach",
+      "Cream cheese",
+      "Garlic",
+      "Lemon zest"
+    ],
+    "how_to_make": [
+      "Remove the stems from the mushrooms and hollow them out slightly.",
+      "Sauté salmon, spinach, and garlic until cooked, then mix in cream cheese and lemon zest.",
+      "Stuff the mushroom caps with the salmon and spinach mixture.",
+      "Bake until mushrooms are tender and the filling is golden brown."
+    ]
+  },
+  {
+    "_id": "lowcarbrecipe5",
+    "name": "Cucumber and Turkey Roll-Ups",
+    "image": "https://twohealthykitchens.com/wp-content/uploads/2021/08/Turkey-Pesto-Tortilla-Roll-Ups.jpg",
+    "about": "Low-carb and high-protein finger food. These roll-ups feature crisp cucumber slices wrapped around lean turkey and a zesty cream cheese filling.",
+    "category": "Low-Carb",
+    "ingredients": [
+      "Cucumber",
+      "Turkey slices",
+      "Cream cheese",
+      "Dill",
+      "Lemon juice",
+      "Cherry tomatoes"
+    ],
+    "how_to_make": [
+      "Slice cucumbers into thin strips lengthwise.",
+      "Spread a mixture of cream cheese, dill, and lemon juice on each cucumber strip.",
+      "Place a turkey slice on top and roll up the cucumber.",
+      "Serve with cherry tomatoes for a refreshing low-carb snack."
+    ]
+  },
+  {
+    "_id": "dairyfreerecipe1",
+    "name": "Coconut Milk Chicken Curry",
+    "image": "https://www.chelseasmessyapron.com/wp-content/uploads/2015/08/Coconut-Chicken-Curry-2.jpg",
+    "about": "A rich and creamy dairy-free chicken curry made with coconut milk. This flavorful dish is perfect for those with dairy sensitivities.",
+    "category": "Dairy-Free",
+    "ingredients": [
+      "Chicken thighs",
+      "Coconut milk",
+      "Onion",
+      "Garlic",
+      "Ginger",
+      "Curry spices"
+    ],
+    "how_to_make": [
+      "Sauté onions, garlic, and ginger in a pan.",
+      "Add chicken thighs and brown them on all sides.",
+      "Stir in coconut milk and a blend of curry spices.",
+      "Simmer until the chicken is cooked and the sauce thickens.",
+      "Serve with rice or naan for a satisfying dairy-free meal."
+    ]
+  },
+  {
+    "_id": "dairyfreerecipe2",
+    "name": "Vegan Tomato Basil Pasta",
+    "image": "https://shortgirltallorder.com/wp-content/uploads/2021/06/tomato-basil-pasta-square.jpg",
+    "about": "A dairy-free and vegan pasta dish featuring a luscious tomato and basil sauce. Perfect for those seeking a comforting and dairy-free Italian meal.",
+    "category": "Dairy-Free",
+    "ingredients": [
+      "Pasta",
+      "Tomatoes",
+      "Basil leaves",
+      "Garlic",
+      "Olive oil",
+      "Nutritional yeast"
+    ],
+    "how_to_make": [
+      "Cook pasta according to package instructions.",
+      "In a separate pan, sauté garlic and basil in olive oil.",
+      "Add tomatoes and simmer to create a flavorful sauce.",
+      "Toss the cooked pasta in the tomato basil sauce and sprinkle with nutritional yeast.",
+      "Enjoy your dairy-free Italian delight."
+    ]
+  },
+  {
+    "_id": "dairyfreerecipe3",
+    "name": "Almond Milk Smoothie",
+    "image": "https://melaniemakes.com/images/2017/04/strawberry-almond-smoothie-2.jpg",
+    "about": "A dairy-free and refreshing almond milk smoothie. Packed with fruits and nuts, this is a healthy and creamy dairy-free beverage.",
+    "category": "Dairy-Free",
+    "ingredients": [
+      "Almond milk",
+      "Banana",
+      "Almonds",
+      "Honey",
+      "Chia seeds",
+      "Spinach"
+    ],
+    "how_to_make": [
+      "Blend almond milk, banana, almonds, honey, and chia seeds until smooth.",
+      "Add spinach for an extra nutritional boost and blend again.",
+      "Serve chilled for a dairy-free, nutrient-rich smoothie."
+    ]
+  },
+  {
+    "_id": "dairyfreerecipe4",
+    "name": "Lentil and Vegetable Stir-Fry",
+    "image": "https://www.veggiesdontbite.com/wp-content/uploads/2020/04/vegan-vegetable-teriyaki-stir-fry-14.jpg",
+    "about": "A dairy-free and plant-based stir-fry loaded with protein and colorful vegetables. It's a healthy and satisfying dairy-free meal option.",
+    "category": "Dairy-Free",
+    "ingredients": [
+      "Lentils",
+      "Bell peppers",
+      "Broccoli",
+      "Carrots",
+      "Soy sauce",
+      "Sesame oil"
+    ],
+    "how_to_make": [
+      "Cook lentils according to package instructions.",
+      "Stir-fry bell peppers, broccoli, and carrots in a pan.",
+      "Add cooked lentils and season with soy sauce and sesame oil.",
+      "Stir-fry until everything is heated through and well combined.",
+      "Enjoy your dairy-free, protein-packed stir-fry."
+    ]
+  },
+  {
+    "_id": "dairyfreerecipe5",
+    "name": "Dairy-Free Chocolate Avocado Mousse",
+    "image": "https://helloglow.co/wp-content/uploads/2020/07/Chocolate-Avocado-Mousse-4.jpg",
+    "about": "A dairy-free and creamy chocolate mousse made with avocados. This dessert is rich, indulgent, and perfect for those avoiding dairy products.",
+    "category": "Dairy-Free",
+    "ingredients": [
+      "Avocados",
+      "Cocoa powder",
+      "Maple syrup",
+      "Vanilla extract",
+      "Coconut milk",
+      "Dark chocolate chips"
+    ],
+    "how_to_make": [
+      "Blend avocados, cocoa powder, maple syrup, and vanilla extract until smooth.",
+      "Melt dark chocolate chips and mix them into the avocado mixture.",
+      "Chill in the refrigerator until set, and serve as a dairy-free dessert."
+    ]
+  },
+  {
+    "_id": "vegetarianrecipe1",
+    "name": "Mushroom Risotto",
+    "image": "https://lindseyeatsla.com/wp-content/uploads/2020/12/Lindseyeatsla_Mushroom_Risotto-9.jpg",
+    "about": "A classic and creamy vegetarian risotto featuring tender mushrooms and Arborio rice. This dish is a comforting and satisfying option for vegetarians.",
+    "category": "Vegetarian",
+    "ingredients": [
+      "Arborio rice",
+      "Mushrooms",
+      "Onion",
+      "Garlic",
+      "Vegetable broth",
+      "Parmesan cheese"
+    ],
+    "how_to_make": [
+      "Sauté onions and garlic in a pan until translucent.",
+      "Add Arborio rice and cook until it's lightly toasted.",
+      "Gradually add vegetable broth, stirring until the rice is cooked and the mixture is creamy.",
+      "Stir in sautéed mushrooms and Parmesan cheese.",
+      "Serve your vegetarian mushroom risotto hot."
+    ]
+  },
+
+  {
+    "_id": "vegetarianrecipe2",
+    "name": "Chickpea and Spinach Curry",
+    "image": "https://vancouverwithlove.com/wp-content/uploads/2023/03/chickpea-spinach-curry-featured.jpg",
+    "about": "A flavorful and protein-rich vegetarian curry made with chickpeas and spinach. This dish is perfect for vegetarians seeking a hearty and nutritious meal.",
+    "category": "Vegetarian",
+    "ingredients": [
+      "Chickpeas",
+      "Spinach",
+      "Tomatoes",
+      "Onion",
+      "Garam masala",
+      "Coconut milk"
+    ],
+    "how_to_make": [
+      "Sauté onions in a pan until they're translucent.",
+      "Add chickpeas, tomatoes, and garam masala, and simmer until the sauce thickens.",
+      "Stir in coconut milk and spinach until the spinach wilts.",
+      "Serve your vegetarian chickpea and spinach curry with rice or naan."
+    ]
+  },
+
+  {
+    "_id": "vegetarianrecipe3",
+    "name": "Caprese Salad",
+    "image": "https://www.modernhoney.com/wp-content/uploads/2021/07/Caprese-Salad-1-scaled.jpg",
+    "about": "A simple and classic vegetarian Caprese salad featuring fresh tomatoes, mozzarella, basil, and a drizzle of balsamic glaze. It's a light and refreshing vegetarian option.",
+    "category": "Vegetarian",
+    "ingredients": [
+      "Tomatoes",
+      "Fresh mozzarella",
+      "Fresh basil leaves",
+      "Balsamic glaze",
+      "Extra virgin olive oil",
+      "Salt and pepper"
+    ],
+    "how_to_make": [
+      "Slice tomatoes and fresh mozzarella into even rounds.",
+      "Layer the tomato, mozzarella, and basil on a serving platter.",
+      "Drizzle with balsamic glaze and extra virgin olive oil.",
+      "Season with salt and pepper, and serve your vegetarian Caprese salad."
+    ]
+  },
+  {
+    "_id": "vegetarianrecipe4",
+    "name": "Vegetable and Tofu Stir-Fry",
+    "image": "https://www.lastingredient.com/wp-content/uploads/2021/02/ginger-garlic-veggie-tofu-stir-fry7.jpg",
+    "about": "A colorful and wholesome vegetarian stir-fry loaded with a variety of vegetables and tofu. It's a healthy and protein-packed option for vegetarians.",
+    "category": "Vegetarian",
+    "ingredients": [
+      "Tofu",
+      "Bell peppers",
+      "Broccoli",
+      "Carrots",
+      "Soy sauce",
+      "Sesame oil"
+    ],
+    "how_to_make": [
+      "Cut tofu into cubes and stir-fry until golden brown.",
+      "Add bell peppers, broccoli, and carrots to the pan and stir-fry until tender.",
+      "Season with soy sauce and sesame oil, and continue to stir-fry until well combined.",
+      "Serve your vegetarian tofu and vegetable stir-fry hot."
+    ]
+  },
+  {
+    "_id": "vegetarianrecipe5",
+    "name": "Quinoa and Black Bean Salad",
+    "image": "https://pulses.org/nap/wp-content/uploads/2019/04/black-bean-quinoa-salad_5.jpg",
+    "about": "A protein-rich and vegetarian salad featuring quinoa, black beans, and a medley of fresh vegetables. This salad is a nutritious and satisfying choice for vegetarians.",
+    "category": "Vegetarian",
+    "ingredients": [
+      "Quinoa",
+      "Black beans",
+      "Corn",
+      "Bell peppers",
+      "Cilantro",
+      "Lime juice"
+    ],
+    "how_to_make": [
+      "Cook quinoa according to package instructions and let it cool.",
+      "Rinse and drain the black beans and corn.",
+      "Dice bell peppers and chop cilantro.",
+      "Combine cooked quinoa, black beans, corn, bell peppers, and cilantro.",
+      "Drizzle lime juice over the salad, toss, and enjoy your vegetarian quinoa and black bean salad."
+    ]
+  }
+]

@@ -70,7 +70,7 @@ const Trainer = () => {
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-800 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                <div className="absolute inset-0 flex translate-x-[85%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-x-0">
+                <div className="absolute inset-0 flex translate-x-[95%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-x-0">
                   <div>
                     <h1 className="text-3xl font-bold text-white">
                       {trainer.name}
