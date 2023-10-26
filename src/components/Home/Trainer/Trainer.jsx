@@ -12,7 +12,7 @@ import trainers_bg from "./Trainer.css";
 const Trainer = () => {
   const [trainers, setTrainers] = useState([]);
   useEffect(() => {
-    fetch("/public/trainers.json")
+    fetch("trainers.json")
       .then((res) => res.json())
       .then((data) => setTrainers(data));
   }, []);
