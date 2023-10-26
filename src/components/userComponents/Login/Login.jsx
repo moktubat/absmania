@@ -1,24 +1,43 @@
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import contact from "../../../assets/contact.jpg";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useRef, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../provider/AuthProvider";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const Login = () => {
+  const { signIn, loading, resetPassword } = useContext(AuthContext);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+
+  const emailRef = useRef();
+
   const [showPassword, setShowPassword] = useState(false);
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (contactInfo) => {
-    console.log(contactInfo);
-    reset();
+  const onSubmit = (data) => {
+    signIn(data.email, data.password).then((result) => {
+      console.log(result.user);
+      navigate(from, { replace: true });
+    });
+    console.log(data);
   };
+
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+  const handleResetPassword = () => {
+    const email = emailRef.current.value;
+    resetPassword(email).then(() => {
+      alert("Please Check your Email");
+    });
   };
   return (
     <div className="mx-16 my-16">
@@ -73,24 +92,45 @@ const Login = () => {
             </div>
             <div className="flex justify-between">
               <p className="text-white">
-                <Link className="text-white hover:text-[#FFED00] underline underline-offset-4">
+                <Link
+                  onClick={handleResetPassword}
+                  className="text-white hover:text-[#FFED00] underline underline-offset-4"
+                >
                   Forgot Password?
                 </Link>{" "}
               </p>
               <p className="text-white">
                 Don&apos;t have an account?{" "}
-                <Link to="/signup" className="text-white hover:text-[#FFED00] underline underline-offset-4">
+                <Link
+                  to="/signup"
+                  className="text-white hover:text-[#FFED00] underline underline-offset-4"
+                >
                   Sign Up
                 </Link>
               </p>
             </div>
             <div className="flex justify-center mt-4">
-              <input
+              {/* <input
                 type="submit"
                 value="Login"
                 className="w-full btn bg-[#FFED00] text-black border-black hover:bg-black hover:text-[#FFED00] hover:border-[#FFED00] 
                  md:rounded-[48px]"
-              />
+              /> */}
+              {loading ? (
+                <AiOutlineLoading3Quarters
+                  className="m-auto animate-spin text-[#FFED00] border-black hover:border-[#FFED00] cursor-pointer"
+                  size={24}
+                />
+              ) : (
+                <>
+                  <input
+                    type="submit"
+                    value="Log In"
+                    className="w-full btn bg-[#FFED00] text-black border-black hover:bg-black hover:text-[#FFED00] hover:border-[#FFED00] 
+                 md:rounded-[48px] cursor-pointer"
+                  />
+                </>
+              )}
             </div>
           </form>
         </div>
