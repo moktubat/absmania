@@ -6,7 +6,7 @@ const AllRecipes = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/public/recipes.json")
+    fetch(`${import.meta.env.VITE_SERVER_URL}/recipes`)
       .then((res) => res.json())
       .then((data) => {
         setRecipes(data);

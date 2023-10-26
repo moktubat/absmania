@@ -12,7 +12,7 @@ import trainers_bg from "./Trainer.css";
 const Trainer = () => {
   const [trainers, setTrainers] = useState([]);
   useEffect(() => {
-    fetch("trainers.json")
+    fetch(`${import.meta.env.VITE_SERVER_URL}/trainers`)
       .then((res) => res.json())
       .then((data) => setTrainers(data));
   }, []);

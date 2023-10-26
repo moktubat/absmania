@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    fetch("/public/blogs.json")
+    fetch(`${import.meta.env.VITE_SERVER_URL}/blogs`)
       .then((res) => res.json())
       .then((data) => setBlogs(data.slice(0, 4)));
   }, []);
