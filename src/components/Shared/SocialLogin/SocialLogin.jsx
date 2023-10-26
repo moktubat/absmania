@@ -3,6 +3,7 @@ import { AuthContext } from "../../../provider/AuthProvider";
 import toast from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { saveUser } from "../../../api/auth";
 
 const SocialLogin = () => {
   const { setUser, googleSignIn, setLoading, loading } =
@@ -14,12 +15,12 @@ const SocialLogin = () => {
         const loggedInUser = result.user;
         console.log(loggedInUser);
         setUser(loggedInUser);
-        const saveUser = {
+        const userInfo = {
           name: loggedInUser.displayName,
           email: loggedInUser.email,
           image: loggedInUser.photoURL,
         };
-        saveUser(saveUser).then((data) => {
+        saveUser(userInfo).then((data) => {
           if (data.insertedId) {
             toast.success(
               `${
@@ -38,25 +39,23 @@ const SocialLogin = () => {
   };
   return (
     <div>
-      <div className="text-center">
+      <div>
         <button
           onClick={handleGoogleSignIn}
-          className="w-10 h-10 mt-4 items-center justify-center inline-flex rounded-full font-bold text-blue-700 text-lg border-2 border-blue-700"
+          className="w-full font-bold text-white text-md"
         >
           {loading ? (
             <AiOutlineLoading3Quarters
-              className="m-auto animate-spin"
+              className="animate-spin"
               size={24}
             />
           ) : (
             <>
-              <FcGoogle className="text-4xl  bg-white rounded " />
+              <p className="border flex gap-3 items-center justify-center py-2 px-4 rounded-full hover:text-black hover:bg-[#FFED00] border-[#FFED00] mr-2"> <FcGoogle className="text-3xl" /> Login with google</p>
             </>
           )}
         </button>
-        <p className="text-gray-100 pt-2">
-          <div className="divider">OR</div> use email your account
-        </p>
+        
       </div>
     </div>
   );

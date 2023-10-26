@@ -5,6 +5,7 @@ import About from "../pages/About/About";
 import Recipes from "../pages/Recipes/Recipes";
 import Blogs from "../pages/Blogs/Blogs";
 import Login from "../components/userComponents/Login/Login";
+import Register from "../components/userComponents/Register/SignUp";
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
         {
           path: 'login',
           element: <Login></Login>
+        },
+        {
+          path: 'register',
+          element: <Register></Register>
         },
       ]
     },
