@@ -1,16 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: "Outfit", sans-serif;
-  }
+  font-family: "Outfit", sans-serif;
+}
 
-.active{
-    @apply font-medium tracking-wide text-[#FFED00] transition-colors duration-200 underline-offset-8 underline
-  }
-  
-  .default{
-    @apply font-medium tracking-wide text-white transition-colors duration-200 hover:text-yellow-400
-  }
+.active {
+  @apply font-medium tracking-wide text-[#FFED00] transition-colors duration-200 underline-offset-8 underline;
+}
+
+.default {
+  @apply font-medium tracking-wide text-white transition-colors duration-200 hover:text-yellow-400;
+}
+
+.choose-inside {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 20%,
+    100% 80%,
+    90% 100%,
+    0 100%,
+    0% 80%,
+    0% 20%
+  );
+  border: 1px solid #FFED00;
+  background-color: black;
+}
+.choose-outside {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 20%,
+    100% 80%,
+    90% 100%,
+    0 100%,
+    0% 80%,
+    0% 20%
+  );
+  background-color: #FFED00;
+  padding: 1px;
+  border-radius: 8px;
+}

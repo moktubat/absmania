@@ -1,10 +1,22 @@
+import { useEffect, useState } from "react";
+import { getAllBlogs } from "../../api/fetch";
 
 const Blogs = () => {
-    return (
+  const [blogs, setBlogs] = useState([]);
+  const [currentBlog, setCurrentBlog] = useState(1);
+  useEffect(() => {
+    getAllBlogs().then((data) => setBlogs(data));
+  }, []);
+  return (
+    <div>
+      <div className="m-16">
         <div>
-            <h1>Hi I am Blog Page</h1>
+          <div></div>
+          <div></div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Blogs;
