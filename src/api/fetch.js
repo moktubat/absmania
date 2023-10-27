@@ -1,6 +1,6 @@
 // ==========post notes in db=============
 export const sendNotes = async (contactInfo) => {
-  const response = await fetch(`${import.meta.env.VITE_API_URL}/contact-us`, {
+  const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/contact-us`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -13,13 +13,13 @@ export const sendNotes = async (contactInfo) => {
 
 // ================== blogs ====================
 export const getAllBlogs = async () => {
-  const res = await fetch(`${import.meta.env.VITE_API_URL}/blogs`);
+  const res = await fetch(`${import.meta.env.VITE_SERVER_URL}/blogs`);
   const data = res.json();
   return data;
 };
 
 export const addBlog = async (blogData) => {
-  const response = await fetch(`${import.meta.env.VITE_API_URL}/blogs`, {
+  const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/blogs`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
