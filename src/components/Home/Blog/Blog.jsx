@@ -1,5 +1,6 @@
 import moment from "moment/moment";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -46,9 +47,9 @@ const Blog = () => {
                       <span className="text-[#FFED00]">Category:</span>
                       <p>{blog.category}</p>
                     </div>
-                    <button className="w-full btn bg-[#FFED00] text-black border-black hover:bg-black hover:text-[#FFED00] hover:border-[#FFED00]">
+                    <Link to={`/blog/${blog._id}`} className="w-full btn bg-[#FFED00] text-black border-black hover:bg-black hover:text-[#FFED00] hover:border-[#FFED00]">
                       Read full blog
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}

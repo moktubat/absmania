@@ -1,59 +1,63 @@
-import { BsCalendarEvent } from "react-icons/bs";
-import { PiUserCircle } from "react-icons/pi";
 import moment from "moment";
 import { useLoaderData } from "react-router-dom";
 
 const ViewSingleBlog = () => {
   const blog = useLoaderData();
-  const {imageUrl, blogTime, authorName, blogTitle, description} = blog;
+  const {
+    _id,
+    imageUrl,
+    category,
+    blogTime,
+    authorName,
+    authorImg,
+    blogTitle,
+    description,
+  } = blog;
   if (!blog) {
     return <div>Loading...</div>;
   }
   return (
     <div>
       <div className="m-16">
-        <h1 className="text-xl md:text-3xl xl:text-4xl font-semibold xl:font-bold xl:tracking-wide xl:leading-snug capitalize text-[#FFED00]">
-          Blog
-        </h1>
-
-        <div className="flex flex-col md:flex-row gap-10 container mx-auto my-20 items-start justify-center">
-          <div className="w-full md:w-3/5">
-            <img src={imageUrl} alt="Blog Photo" className="w-full" />
-            <div className="py-4 flex items-center gap-10 border-b border-black">
-              <p className="inline-flex items-center gap-1 text-black font-semibold text-sm md:text-base">
-                <BsCalendarEvent className=" text-gray-400" />
-                {moment(blogTime).format("Do MMM, YYYY- hh:m a")}
-              </p>
-              <p className="inline-flex items-center gap-1 text-black font-semibold text-sm md:text-base">
-                <PiUserCircle className="text-xl text-gray-400" />
-                {authorName}
-              </p>
-            </div>
-
-            <div className="my-10">
-              <h1 className="text-black text-lg md:text-xl font-signature mb-8">
-                {blogTitle}
-              </h1>
-              <p className="text-sm text-gray-500">{description}</p>
-            </div>
-            <div className="flex items-center gap-5 border-b border-black pb-10">
-              <button className="px-3 py-1 bg-white hover:bg-[#ED0058] text-black hover:text-white border border-black hover:border-[#ED0058] rounded-md transition-all ease-in-out duration-300">
-                News
-              </button>
-              <button className="px-3 py-1 bg-white hover.bg-[#ED0058] text-black hover.text-white border border-black hover.border-[#ED0058] rounded-md transition-all ease-in-out duration-300">
-                Blog
-              </button>
-              <button className="px-3 py-1 bg-white hover.bg-[#ED0058] text-black hover.text-white border border-black hover.border-[#ED0058] rounded-md transition-all ease-in-out duration-300">
-                Tips
-              </button>
-            </div>
-            <div className="mt-10">
-              <h1 className="text-black text-lg md:text-xl font-signature mb-10">
-                Related Posts
-              </h1>
+        <div
+          className="mb-4 md:mb-0 w-full h-96 max-w-screen-md mx-auto relative"
+        >
+          <img
+            src={imageUrl}
+            className="absolute left-0 top-0 w-full h-full z-0 object-cover rounded"
+          />
+          <div className="p-4 absolute bottom-0 left-0 z-20">
+            <a
+              href={_id}
+              className="px-4 py-1 bg-[#FFED00] text-black font-bold inline-flex items-center justify-center mb-2"
+            >
+              {category}
+            </a>
+            <h2 className="text-4xl font-semibold text-gray-100 leading-tight">
+              {blogTitle}
+            </h2>
+            <div className="flex mt-3">
+              <img
+                src={authorImg}
+                className="h-10 w-10 rounded-full mr-2 object-cover border border-[#FFED00]"
+              />
+              <div>
+                <p className="font-bold text-[#FFED00] text-sm">
+                  {authorName}
+                </p>
+                <p className="font-bold text-[#FFED00] text-xs">
+                  {" "}
+                  {moment(blogTime).format("Do MMM, YYYY- hh:m a")}{" "}
+                </p>
+              </div>
             </div>
           </div>
-          <div className="md:w-2/5 hidden md:block"></div>
+        </div>
+
+        <div className="px-4 lg:px-0 mt-12 text-gray-200 max-w-screen-md mx-auto text-lg leading-relaxed">
+          <p className="pb-6">
+            {description}
+          </p>
         </div>
       </div>
     </div>

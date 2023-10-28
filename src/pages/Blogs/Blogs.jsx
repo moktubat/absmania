@@ -5,10 +5,14 @@ import { getAllBlogs } from "../../api/fetch";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [currentBlog, setCurrentBlog] = useState(1);
 
   useEffect(() => {
-    getAllBlogs().then((data) => setBlogs(data));
+    getAllBlogs().
+    then((data) => setBlogs(data))
+    .finally(() => setLoading(false));
+    
   }, []);
 
   const blogsPerPage = 3;
@@ -36,6 +40,13 @@ const Blogs = () => {
     }
     return pageNumbers;
   };
+
+  if (loading) {
+    return <div className="w-1/4 mx-auto my-24">
+      <img src="https://media.tenor.com/2JOBy0LSoX8AAAAi/toto-gym.gif" className="w-1/3 h-1/3 mx-auto " alt="" />
+    </div>; 
+  }
+
 
   return (
     <div>
