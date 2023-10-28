@@ -7,6 +7,7 @@ import Blogs from "../pages/Blogs/Blogs";
 import Login from "../components/userComponents/Login/Login";
 import Register from "../components/userComponents/Register/SignUp";
 import Contact from "../pages/Contact/Contact";
+import ViewSingleBlog from "../pages/Blogs/ViewSingleBlog";
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,11 @@ export const router = createBrowserRouter([
         {
           path: 'blogs',
           element: <Blogs></Blogs>
+        },
+        {
+          path: 'blog/:id',
+          element: <ViewSingleBlog></ViewSingleBlog>,
+          loader: ({params}) => fetch(`http://localhost:5000/blog/${params.id}`)
         },
         {
           path: 'contact',

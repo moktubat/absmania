@@ -45,8 +45,8 @@ const Blogs = () => {
           <div className="w-full lg:w-2/3">
             {currentBlogs.map((blog) => (
               <Link
-                to={`/blogs/${blog._id}`}
                 key={blog._id}
+                to={`/blog/${blog._id}`}
                 className="rounded-lg w-full lg:flex mb-5 border border-[#FFED00]"
               >
                 <div
@@ -117,10 +117,7 @@ const Blogs = () => {
               </h5>
               <ul>
                 <li className="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
-                  <a
-                    href="#"
-                    className="flex items-center cursor-pointer"
-                  >
+                  <a href="#" className="flex items-center cursor-pointer">
                     <span className="inline-block h-4 w-4 bg-green-300 mr-3"></span>
                     Nutrition
                     <span className="ml-auto">23 articles</span>
@@ -128,10 +125,7 @@ const Blogs = () => {
                   </a>
                 </li>
                 <li className="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
-                  <a
-                    href="#"
-                    className="flex items-center cursor-pointer"
-                  >
+                  <a href="#" className="flex items-center cursor-pointer">
                     <span className="inline-block h-4 w-4 bg-indigo-300 mr-3"></span>
                     Food & Diet
                     <span className="ml-auto">18 articles</span>
@@ -139,10 +133,7 @@ const Blogs = () => {
                   </a>
                 </li>
                 <li className="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
-                  <a
-                    href="#"
-                    className="flex items-center cursor-pointer"
-                  >
+                  <a href="#" className="flex items-center cursor-pointer">
                     <span className="inline-block h-4 w-4 bg-yellow-300 mr-3"></span>
                     Workouts
                     <span className="ml-auto">34 articles</span>
@@ -150,10 +141,7 @@ const Blogs = () => {
                   </a>
                 </li>
                 <li className="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
-                  <a
-                    href="#"
-                    className="flex items-center cursor-pointer"
-                  >
+                  <a href="#" className="flex items-center cursor-pointer">
                     <span className="inline-block h-4 w-4 bg-blue-300 mr-3"></span>
                     Immunity
                     <span className="ml-auto">9 articles</span>
@@ -162,7 +150,6 @@ const Blogs = () => {
                 </li>
               </ul>
             </div>
-
 
             {/* <!-- subscribe --> */}
             <div className="p-1 mt-4 mb-4 text-white">
@@ -182,7 +169,6 @@ const Blogs = () => {
                 Subscribe
               </button>
             </div>
-
           </div>
         </div>
       </div>
