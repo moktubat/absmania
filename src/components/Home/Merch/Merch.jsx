@@ -11,7 +11,7 @@ const Merch = () => {
     <div className="mx-16 my-16">
       <div className="flex items-center justify-between my-16">
         <h1 className="text-[#FFED00] text-2xl font-semibold">
-          /// GET OUR MERCH
+          ///Get Our Merch
         </h1>
         <button className="btn  capitalize hover:bg-[#FFED00] hover:text-black hover:border-black bg-black text-white border-[#FFED00] rounded-2xl">
           View All Products

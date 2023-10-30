@@ -30,9 +30,9 @@ const Trainer = () => {
         <Swiper
           slidesPerView={1}
           spaceBetween={4}
-          loop={false}
+          loop={true}
           autoplay={{
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           pagination={{

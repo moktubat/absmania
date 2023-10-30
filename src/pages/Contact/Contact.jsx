@@ -41,7 +41,7 @@ const Contact = () => {
           <div className="flex flex-col xl:flex-row justify-between my-16 gap-12 items-center">
             <div className="relative hover:scale-105 duration-300">
               <div className="choose-outside">
-                <div className="w-full choose-inside   pt-8 px-8 rounded-lg">
+                <div className="w-full choose-inside pt-8 px-6 rounded-lg">
                   <div className="py-8">
                     <h2 className="text-[#FFED00] text-xl font-bold">
                       Fitness Guidance
@@ -61,7 +61,7 @@ const Contact = () => {
 
             <div className="relative hover:scale-105 duration-300">
               <div className="choose-outside">
-                <div className="w-full choose-inside pt-8 px-8 rounded-lg">
+                <div className="w-full choose-inside pt-8 px-6 rounded-lg">
                   <div className="py-8">
                     <h2 className="text-[#FFED00] text-xl font-bold">
                       Nutritional Support
@@ -81,10 +81,10 @@ const Contact = () => {
 
             <div className="relative hover:scale-105 duration-300">
               <div className="choose-outside">
-                <div className="w-full choose-inside   pt-8 px-8 rounded-lg">
+                <div className="w-full choose-inside pt-8 px-6 rounded-lg">
                   <div className="py-8">
                     <h2 className="text-[#FFED00] text-xl font-bold">
-                      Equipment and Facilities
+                      Equipment Facilities
                     </h2>
                     <p className="text-white">
                       Learn safe and efficient equipment use with expert
@@ -101,10 +101,10 @@ const Contact = () => {
 
             <div className="relative hover:scale-105 duration-300">
               <div className="choose-outside">
-                <div className="w-full choose-inside pt-8 px-8 rounded-lg">
+                <div className="w-full choose-inside pt-8 px-6 rounded-lg">
                   <div className="py-8">
                     <h2 className="text-[#FFED00] text-xl font-bold">
-                      Membership and Programs
+                      Membership Programs
                     </h2>
                     <p className="text-white">
                       Discover the perfect membership option tailored to your

@@ -8,16 +8,31 @@ import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 
 import { useEffect, useState } from "react";
+import { getAllTestimonials } from "../../../api/fetch";
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_SERVER_URL}/testimonials`)
-      .then((res) => res.json())
-      .then((data) => setTestimonials(data));
+    getAllTestimonials()
+      .then((data) => setTestimonials(data))
+      .finally(() => setLoading(false));
   }, []);
 
   const [activeIndex, setActiveIndex] = useState(0);
+
+  if (loading) {
+    return (
+      <div className="w-1/4 mx-auto my-24">
+        <img
+          src="https://media.tenor.com/2JOBy0LSoX8AAAAi/toto-gym.gif"
+          className="w-1/3 h-1/3 mx-auto "
+          alt=""
+        />
+      </div>
+    );
+  }
   return (
     <div className="pt-1 fitness_bg">
       <div className="md:mx-16 my-8">
@@ -54,7 +69,12 @@ const Testimonials = () => {
                border-slate-200 md:flex-row flex-col
                 ${activeIndex !== i && "scale-75 blur-sm"}`}
               >
-                <img src={testimonial.img} alt="..." className="h-32 rounded-xl" loading=" lazy"/>
+                <img
+                  src={testimonial.img}
+                  alt="..."
+                  className="h-32 rounded-xl"
+                  loading=" lazy"
+                />
                 <div>
                   <p className="text-white sm:text-base text-sm">
                     {testimonial.review}
