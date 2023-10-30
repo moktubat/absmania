@@ -26,7 +26,7 @@ const NavBar = () => {
       </li>
       <li>
         <NavLink
-          to="/workout-programs"
+          to="/workouts"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           Workout Programs
