@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 import { getAllWorkOuts } from "../../../api/fetch";
@@ -85,20 +86,13 @@ const Workout = () => {
                     />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-900 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                  <div className="absolute inset-0 flex translate-y-[50%] md:translate-y-[75%] flex-col items-center justify-center px-8 mb-3 gap-y-8 hover:gap-0 text-center transition-all duration-300 group-hover:translate-y-0">
+                  <div className="absolute inset-0 flex translate-y-[50%] md:translate-y-[55%] flex-col items-center justify-center mb-3 gap-y-8 hover:gap-0 text-center transition-all duration-300 group-hover:translate-y-0">
                     <h1 className="text-2xl font-semibold text-white">
                       {workOut.name}
                     </h1>
-                    <p className="py-8 text-white text-lg">
-                      {workOut.description}
+                    <p className="pt-8 text-white text-lg">
+                      {workOut.safetyGuidelines}
                     </p>
-                    <div className="">
-                      <Link to="/">
-                        <button className="btn mt-6 capitalize hover:bg-[#FFED00] hover:text-black hover:border-black bg-transparent text-white border-[#FFED00] text-xl rounded-4xl">
-                          View More
-                        </button>
-                      </Link>
-                    </div>
                   </div>
                 </div>
                 <button className="btn mt-6 capitalize hover:bg-[#FFED00] hover:text-black hover:border-black bg-black text-white border-[#FFED00] rounded-2xl">

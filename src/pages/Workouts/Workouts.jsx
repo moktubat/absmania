@@ -1,10 +1,11 @@
+import AllWorkouts from "./AllWorkouts";
+import WorkoutHeader from "./WorkoutHeader/WorkoutHeader";
 
 const Workouts = () => {
     return (
         <div>
-            <div className="m-16">
-
-            </div>
+            <WorkoutHeader></WorkoutHeader>
+            <AllWorkouts></AllWorkouts>
         </div>
     );
 };
