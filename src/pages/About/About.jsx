@@ -27,34 +27,34 @@ const About = () => {
           </button>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-          <div className="bg-black shadow-lg p-4 rounded-lg hover:scale-105 duration-200">
-            <MdOutlineSpeakerNotesOff className="text-5xl text-[#FFED00]"></MdOutlineSpeakerNotesOff>
-            <p className="pt-3 text-lg text-white">No long-term contract</p>
-            <p className="pt-3 text-lg text-white">
+          <div className="bg-white shadow-lg p-4 rounded-lg hover:scale-105 duration-300">
+            <MdOutlineSpeakerNotesOff className="text-5xl text-black"></MdOutlineSpeakerNotesOff>
+            <p className="pt-3 text-lg text-black">No long-term contract</p>
+            <p className="pt-3 text-lg text-black">
               Our popular month to month plan is offered as pay as you work-out
               with no longterm contract
             </p>
           </div>
-          <div className="bg-black shadow-lg p-4 rounded-lg hover:scale-105 duration-200">
-            <AiOutlineFieldTime className="text-5xl text-[#FFED00]"></AiOutlineFieldTime>
-            <p className="pt-3 text-lg text-white">Excercise round the clock</p>
-            <p className="pt-3 text-lg text-white">
+          <div className="bg-white shadow-lg p-4 rounded-lg hover:scale-105 duration-300">
+            <AiOutlineFieldTime className="text-5xl text-black"></AiOutlineFieldTime>
+            <p className="pt-3 text-lg text-black">Excercise round the clock</p>
+            <p className="pt-3 text-lg text-black">
               Take advantage from gym&apos;s benefits 24 hours a day, 7 days a week
               in each plans available
             </p>
           </div>
-          <div className="bg-black shadow-lg p-4 rounded-lg hover:scale-105 duration-200">
-            <CgGym className="text-5xl text-[#FFED00]"></CgGym>
-            <p className="pt-3 text-lg text-white">Best equipment</p>
-            <p className="pt-3 text-lg text-white">
+          <div className="bg-white shadow-lg p-4 rounded-lg hover:scale-105 duration-300">
+            <CgGym className="text-5xl text-black"></CgGym>
+            <p className="pt-3 text-lg text-black">Best equipment</p>
+            <p className="pt-3 text-lg text-black">
               Practice on the best equipment global brands that addresses a wide
               range of people
             </p>
           </div>
-          <div className="bg-black shadow-lg p-4 rounded-lg hover:scale-105 duration-200">
-            <FaMobileAlt className="text-5xl text-[#FFED00]"></FaMobileAlt>
-            <p className="pt-3 text-lg text-white">Dedicated gym app</p>
-            <p className="pt-3 text-lg text-white">
+          <div className="bg-white shadow-lg p-4 rounded-lg hover:scale-105 duration-300">
+            <FaMobileAlt className="text-5xl text-black"></FaMobileAlt>
+            <p className="pt-3 text-lg text-black">Dedicated gym app</p>
+            <p className="pt-3 text-lg text-black">
               App users can book space at your gym&apos;s classes, with personal
               trainers
             </p>
