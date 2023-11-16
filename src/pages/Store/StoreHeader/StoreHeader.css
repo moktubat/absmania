@@ -1,0 +1,8 @@
+.storeBg{
+    background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.3), rgba(22, 22, 22, 0.671)), url(../../../assets/storeBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}

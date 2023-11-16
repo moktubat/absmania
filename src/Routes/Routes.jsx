@@ -3,8 +3,9 @@ import Main from "../layout/Main/Main";
 import Home from "../components/Home/Home/Home";
 import About from "../pages/About/About";
 import Workouts from "../pages/Workouts/Workouts";
-import Recipes from "../pages/Recipes/Recipes";
 import SingleWorkout from "../pages/Workouts/SingleWorkout";
+import Recipes from "../pages/Recipes/Recipes";
+import Store from "../pages/Store/Store";
 import Blogs from "../pages/Blogs/Blogs";
 import ViewSingleBlog from "../pages/Blogs/ViewSingleBlog";
 import Contact from "../pages/Contact/Contact";
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
         {
           path: 'recipes',
           element: <Recipes></Recipes>
+        },
+        {
+          path: 'store',
+          element: <Store></Store>
         },
         {
           path: 'blogs',

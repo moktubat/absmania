@@ -33,9 +33,9 @@ const Merch = () => {
         <h1 className="text-[#FFED00] text-2xl font-semibold">
           ///Get Our Merch
         </h1>
-        <button className="btn capitalize hover:bg-[#FFED00] hover:text-black hover:border-black bg-black text-white border-[#FFED00] rounded-2xl">
+        <Link to="/store" className="btn capitalize hover:bg-[#FFED00] hover:text-black hover:border-black bg-black text-white border-[#FFED00] rounded-2xl">
           View All Products
-        </button>
+        </Link>
       </div>
       <div>
         <Swiper
