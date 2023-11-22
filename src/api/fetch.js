@@ -50,6 +50,13 @@ export const saveWorkOuts = async (blogData) => {
   return data;
 };
 
+// ================== shop products apis ====================
+export const getAllShopProducts = async () => {
+  const res = await fetch(`${import.meta.env.VITE_SERVER_URL}/products`);
+  const data = await res.json();
+  return data;
+};
+
 // ================== testimonials ====================
 
 export const getAllTestimonials = async () => {
@@ -59,13 +66,16 @@ export const getAllTestimonials = async () => {
 };
 
 export const saveTestimonials = async (blogData) => {
-  const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/testimonials`, {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(blogData),
-  });
+  const response = await fetch(
+    `${import.meta.env.VITE_SERVER_URL}/testimonials`,
+    {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(blogData),
+    }
+  );
   const data = response.json();
   return data;
 };

@@ -1,24 +1,36 @@
+const CategoryList = ({ categories, onCategoryClick }) => {
 
-const CategoryList = ({ categories, onSelectCategory }) => {
+  const getCategoryDisplayName = (category) => {
+    const categoryMappings = {
+      hot: "Hot Collection",
+      tshirts: "T-Shirts",
+      pants: "Pants",
+      bottles: "Bottles",
+      bags: "Bags",
+      hoodies: "Hoodies",
+      supplements: "Supplements",
+      equipments: "Equipments",
+      gymwears: "Gym-Wears",
+    };
 
-    return (
-        <div>
-            <div className="p-4">
-      <h2 className="text-xl font-semibold mb-2">Categories</h2>
-      <ul className="space-y-2">
-        {categories.map((category) => (
-          <li
-            key={category.id}
-            className="cursor-pointer hover:underline"
-            onClick={() => onSelectCategory(category.id)}
-          >
-            {category.name}
+    // If there's a mapping for the category, use the mapped name; otherwise, use the original name
+    return categoryMappings[category] || category;
+  };
+
+  return (
+    <div>
+      <div className="p-4">
+        <h2 className="text-[#FFED00] text-2xl font-semibold mb-6">Categories</h2>
+        <ul className="space-y-2">
+        {categories.map((category, index) => (
+          <li className="text-white hover:cursor-pointer" key={index} onClick={() => onCategoryClick(category)}>
+            {getCategoryDisplayName(category)}
           </li>
         ))}
-      </ul>
+        </ul>
+      </div>
     </div>
-        </div>
-    );
+  );
 };
 
 export default CategoryList;
