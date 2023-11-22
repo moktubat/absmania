@@ -1,16 +1,36 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const ProductList = ({ products }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 3;
+
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+
+  const totalPages = Math.ceil(products.length / productsPerPage);
+
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+  };
+
   return (
     <div className="py-4 w-full">
       <h2 className="text-right text-[#FFED00] text-2xl font-semibold mb-6">
         Products
       </h2>
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {products.map((product, index) => (
+        {currentProducts.map((product, index) => (
           <li key={index} className="w-full">
             <div className="w-[350px] h-[500px] bg-white rounded-lg max-w-sm">
               <div>
                 <img
-                  className="w-[350px] h-[350px] object-cover rounded-t-lg p-2"
+                  loading="lazy"
+                  className="w-[350px] h-[320px] object-cover rounded-t-lg p-2"
                   src={product.image}
                   alt="product image"
                 />
@@ -27,18 +47,34 @@ const ProductList = ({ products }) => {
                   <span className="text-3xl font-bold text-gray-900 dark:text-white">
                     ${product.price}
                   </span>
-                  <a
+                  <Link
                     href="#"
-                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className="text-[#FFED00] bg-black hover:bg-transparent border hover:text-black hover:border-black font-medium rounded-lg px-5 py-2.5 text-center"
                   >
                     Add to cart
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </li>
         ))}
       </ul>
+      <div className="mt-4 flex justify-center">
+        {/* Pagination buttons */}
+        {Array.from({ length: totalPages }).map((_, index) => (
+          <button
+            key={index}
+            className={`mx-2 px-3 py-1 rounded ${
+              currentPage === index + 1
+                ? "bg-[#FFED00] text-black text-lg"
+                : "bg-white text-black hover:bg-[#FFED00]"
+            }`}
+            onClick={() => handlePageChange(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

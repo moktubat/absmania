@@ -5,7 +5,7 @@ import { getAllShopProducts } from "../../../api/fetch";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("hot");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -45,6 +45,7 @@ const Products = () => {
         <CategoryList
           categories={categories}
           onCategoryClick={handleCategoryClick}
+          selectedCategory={selectedCategory}
         />
         <ProductList products={filteredProducts} />
       </div>

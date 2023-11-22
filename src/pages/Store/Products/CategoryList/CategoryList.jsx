@@ -1,4 +1,4 @@
-const CategoryList = ({ categories, onCategoryClick }) => {
+const CategoryList = ({ categories, onCategoryClick, selectedCategory }) => {
 
   const getCategoryDisplayName = (category) => {
     const categoryMappings = {
@@ -23,7 +23,9 @@ const CategoryList = ({ categories, onCategoryClick }) => {
         <h2 className="text-[#FFED00] text-2xl font-semibold mb-6">Categories</h2>
         <ul className="space-y-2">
         {categories.map((category, index) => (
-          <li className="text-white hover:cursor-pointer" key={index} onClick={() => onCategoryClick(category)}>
+          <li className={`text-white hover:cursor-pointer ${
+            selectedCategory === category ? "text-yellow-300" : ""
+          }`} key={index} onClick={() => onCategoryClick(category)}>
             {getCategoryDisplayName(category)}
           </li>
         ))}
