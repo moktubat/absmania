@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
-import { FaXmark } from "react-icons/fa6";
+import { FaCartPlus, FaXmark } from "react-icons/fa6";
+import { AuthContext } from "../../../provider/AuthProvider";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
 
   const navLinks = [
     <>
@@ -66,12 +76,63 @@ const NavBar = () => {
       </li>
       <li>
         <NavLink
-          to="/login"
+          to="/cart"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
-          Login
+          <div className="flex items-center">
+            <FaCartPlus />
+            <span></span>
+          </div>
         </NavLink>
       </li>
+
+      {user ? (
+        <>
+          <li>
+            <div className="dropdown dropdown-hover dropdown-bottom dropdown-end">
+              <div tabIndex={0}>
+                <img src={user.photoURL} className="w-[40px] h-[40px] rounded-full" alt="" />
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content z-[1] menu p-2 bg-gray-900 rounded-box w-52"
+              >
+                <li>
+                  <NavLink
+                    to="/dashboard"
+                    className={({ isActive }) =>
+                      isActive ? "active" : "default"
+                    }
+                  >
+                    Dashboard
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    onClick={() => handleLogOut()}
+                    className={({ isActive }) =>
+                      isActive ? "active" : "default"
+                    }
+                  >
+                    Logout
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </>
+      ) : (
+        <>
+          <li>
+            <NavLink
+              to="/login"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Login
+            </NavLink>
+          </li>
+        </>
+      )}
     </>,
   ];
   return (
@@ -85,9 +146,7 @@ const NavBar = () => {
         </Link>
 
         {/* Nav Items Section */}
-        <ul className="items-center hidden space-x-8 lg:flex">
-          {navLinks}
-        </ul>
+        <ul className="items-center hidden space-x-8 lg:flex">{navLinks}</ul>
         {/* Mobile Navbar Section */}
         <div className="lg:hidden">
           {/* Dropdown Open Button */}
@@ -123,9 +182,7 @@ const NavBar = () => {
                 </div>
                 {/* Mobile Nav Items Section */}
                 <nav>
-                  <ul className="space-y-4">
-                  {navLinks}
-                  </ul>
+                  <ul className="space-y-4">{navLinks}</ul>
                 </nav>
               </div>
             </div>

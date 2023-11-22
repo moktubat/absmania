@@ -38,13 +38,13 @@ export const getAllWorkOuts = async () => {
   return data;
 };
 
-export const saveWorkOuts = async (blogData) => {
+export const saveWorkOuts = async (workOutData) => {
   const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/workOuts`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
     },
-    body: JSON.stringify(blogData),
+    body: JSON.stringify(workOutData),
   });
   const data = response.json();
   return data;
@@ -57,6 +57,19 @@ export const getAllShopProducts = async () => {
   return data;
 };
 
+// ================== shop product cart apis ====================
+export const carts = async (cartData) => {
+  const res = await fetch(`${import.meta.env.VITE_SERVER_URL}/carts`,  {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+    },
+    body: JSON.stringify(cartData),
+  });
+  const data = await res.json();
+  return data;
+};
+
 // ================== testimonials ====================
 
 export const getAllTestimonials = async () => {
@@ -65,7 +78,7 @@ export const getAllTestimonials = async () => {
   return data;
 };
 
-export const saveTestimonials = async (blogData) => {
+export const saveTestimonials = async (testimonialData) => {
   const response = await fetch(
     `${import.meta.env.VITE_SERVER_URL}/testimonials`,
     {
@@ -73,7 +86,7 @@ export const saveTestimonials = async (blogData) => {
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(blogData),
+      body: JSON.stringify(testimonialData),
     }
   );
   const data = response.json();

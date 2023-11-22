@@ -1,7 +1,14 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../../provider/AuthProvider";
+import { carts } from "../../../../api/fetch";
+import Swal from "sweetalert2";
 
 const ProductList = ({ products }) => {
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 3;
 
@@ -16,6 +23,40 @@ const ProductList = ({ products }) => {
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
+  };
+
+  const handleAddToCart = (product) => {
+    console.log(product);
+    if (user) {
+      carts()
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.insertedId) {
+            Swal.fire({
+              position: "center",
+              icon: "success",
+              title: "Product added to cart",
+              showConfirmButton: false,
+            });
+          }
+        });
+    } else {
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "Please login first",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Login Now!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/login", {
+            state: { from: location },
+          });
+        }
+      });
+    }
   };
 
   return (
@@ -48,7 +89,7 @@ const ProductList = ({ products }) => {
                     ${product.price}
                   </span>
                   <Link
-                    href="#"
+                    onClick={() => handleAddToCart(product)}
                     className="text-[#FFED00] bg-black hover:bg-transparent border hover:text-black hover:border-black font-medium rounded-lg px-5 py-2.5 text-center"
                   >
                     Add to cart

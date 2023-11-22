@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const { signIn, loading, resetPassword } = useContext(AuthContext);
@@ -26,6 +27,15 @@ const Login = () => {
   const onSubmit = (data) => {
     signIn(data.email, data.password).then((result) => {
       console.log(result.user);
+      Swal.fire({
+        title: "User Login Successful.",
+        showClass: {
+          popup: "animate__animated animate__fadeInDown",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
       navigate(from, { replace: true });
     });
     console.log(data);
@@ -81,7 +91,11 @@ const Login = () => {
                   className="cursor-pointer"
                   onClick={togglePasswordVisibility}
                 >
-                  {showPassword ? <FaEyeSlash className="text-white" /> : <FaEye className="text-white" />}
+                  {showPassword ? (
+                    <FaEyeSlash className="text-white" />
+                  ) : (
+                    <FaEye className="text-white" />
+                  )}
                 </div>
               </div>
               {errors.password && (
