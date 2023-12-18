@@ -58,14 +58,18 @@ export const getAllShopProducts = async () => {
 };
 
 // ================== shop product cart apis ====================
-export const carts = async (cartData) => {
+export const addToCart = async (user, product) => {
   const res = await fetch(`${import.meta.env.VITE_SERVER_URL}/carts`,  {
     method: "POST",
     headers: {
       "content-type": "application/json",
+      "user": JSON.stringify(user),
     },
-    body: JSON.stringify(cartData),
+    body: JSON.stringify(product),
   });
+  if (!res.ok) {
+    throw new Error("Failed to add to cart");
+  }
   const data = await res.json();
   return data;
 };

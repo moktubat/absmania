@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../../provider/AuthProvider";
-import { carts } from "../../../../api/fetch";
+import { addToCart } from "../../../../api/fetch";
 import Swal from "sweetalert2";
 
 const ProductList = ({ products }) => {
@@ -27,8 +27,8 @@ const ProductList = ({ products }) => {
 
   const handleAddToCart = (product) => {
     console.log(product);
-    if (user) {
-      carts()
+    if (user && user.email) {
+      addToCart(user, product)
         .then((res) => res.json())
         .then((data) => {
           if (data.insertedId) {
@@ -67,11 +67,11 @@ const ProductList = ({ products }) => {
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {currentProducts.map((product, index) => (
           <li key={index} className="w-full">
-            <div className="w-[350px] h-[500px] bg-white rounded-lg max-w-sm">
+            <div className="w-[350px] h-[500px] bg-white rounded-lg max-w-sm border">
               <div>
                 <img
                   loading="lazy"
-                  className="w-[350px] h-[320px] object-cover rounded-t-lg p-2"
+                  className="w-[350px] h-[320px] object-cover rounded-t-lg p-1"
                   src={product.image}
                   alt="product image"
                 />

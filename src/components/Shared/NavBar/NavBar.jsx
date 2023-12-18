@@ -3,10 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { FaCartPlus, FaXmark } from "react-icons/fa6";
 import { AuthContext } from "../../../provider/AuthProvider";
+import useCart from "../../../hooks/useCart";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);
+  const [cart] = useCart();
 
   const handleLogOut = () => {
     logOut()
@@ -81,7 +83,7 @@ const NavBar = () => {
         >
           <div className="flex items-center">
             <FaCartPlus />
-            <span></span>
+            <span>+{cart?.length || 0}</span>
           </div>
         </NavLink>
       </li>
@@ -91,7 +93,7 @@ const NavBar = () => {
           <li>
             <div className="dropdown dropdown-hover dropdown-bottom dropdown-end">
               <div tabIndex={0}>
-                <img src={user.photoURL} className="w-[40px] h-[40px] rounded-full" alt="" />
+                <img src={user.photoURL} className="w-[40px] h-[40px] rounded-full object-cover" alt="" />
               </div>
               <ul
                 tabIndex={0}
