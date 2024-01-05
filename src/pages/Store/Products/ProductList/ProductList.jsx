@@ -25,7 +25,7 @@ const ProductList = ({ products }) => {
     setCurrentPage(newPage);
   };
 
-  const handleAddToCart = (product) => {
+  const handleAddToCart = (user, product) => {
     console.log(product);
     if (user && user.email) {
       addToCart(user, product)

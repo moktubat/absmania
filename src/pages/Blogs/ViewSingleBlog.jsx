@@ -23,14 +23,14 @@ const ViewSingleBlog = () => {
           <div className="relative overflow-hidden">
             <img
               src={imageUrl}
-              className="left-0 top-0 w-full h-full z-0 object-cover rounded"
+              className="left-0 top-0 w-full md:w-[760px] h-full md:h-[420px] z-0 object-cover rounded"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-900 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
           </div>
           <div className="px-4 absolute bottom-0 left-0 z-20">
             <a
               href={_id}
-              className="px-4 py-1 bg-[#FFED00] text-black font-bold inline-flex items-center justify-center mb-2"
+              className="px-4 py-1 bg-[#FFED00] text-black font-bold inline-flex items-center justify-center mb-2 rounded"
             >
               {category}
             </a>
