@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
         {
           path: 'workout/:id',
           element: <SingleWorkout></SingleWorkout>,
-          loader: ({params}) => fetch(`https://absmania-server.up.railway.app/workout/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5000/workout/${params.id}`)
         },
         {
           path: 'recipes',
@@ -49,7 +49,7 @@ export const router = createBrowserRouter([
         {
           path: 'blog/:id',
           element: <ViewSingleBlog></ViewSingleBlog>,
-          loader: ({params}) => fetch(`https://absmania-server.up.railway.app/blog/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5000/blog/${params.id}`)
         },
         {
           path: 'contact',

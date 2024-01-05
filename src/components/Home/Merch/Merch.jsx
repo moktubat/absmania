@@ -84,7 +84,7 @@ const Merch = () => {
                 <h1 className="text-2xl font-semibold text-white mb-10">
                   {product.category}
                 </h1>
-                <div className="">
+                <div>
                   <Link to="/">
                     <button className="btn mt-6 capitalize hover:bg-[#FFED00] hover:text-black hover:border-black bg-transparent text-white border-[#FFED00] text-xl rounded-4xl">
                       View More
